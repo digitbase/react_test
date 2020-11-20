@@ -9,27 +9,33 @@ class Xiaojiejie extends Component {
         };
     }
 
+    test() {
+        console.log("this click");
+    }
+    inputChange(e) {
+        console.log(this);
+        console.log(this.state.value);
+        console.log(e.target.value);
+
+        this.setState({
+            inputValue: e.target.value,
+        });
+    }
+
     render() {
         return (
             <Fragment>
                 <input
                     value={this.state.inputValue}
-                    onChange={this.test}
+                    onChange={this.inputChange.bind(this)}
                 ></input>
                 <button>增加服务</button>
                 <ul>
-                    <li>美容1</li>
+                    <li>美容2</li>
                     <li>asda</li>
                 </ul>
             </Fragment>
         );
-    }
-
-    test() {
-        console.log("this click");
-    }
-    inputChange(e) {
-        console.log(e.target.value);
     }
 }
 
