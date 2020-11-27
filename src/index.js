@@ -13,5 +13,5 @@ console.log(sex);
 
 import * as test03 from "./export_03";
 
-console.log(test03.nname);
+console.log(test03);
 console.log(test03.aage);
