@@ -1,0 +1,22 @@
+function Obj() {}
+Obj.prototype.age = 1;
+Obj.test2 = " bacd";
+Obj.test1 = function () {
+    console.log(this.test2);
+};
+let o = new Obj();
+
+class Obj1 {
+    constructor() {
+        console.log("this is constructor");
+    }
+    static test1 = "bac";
+    myAge = 123;
+    myFun() {
+        console.log("object", this.test1);
+    }
+}
+let o1 = new Obj1();
+
+Obj.test1();
+console.log(Obj1.test1);
