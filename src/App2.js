@@ -22,6 +22,8 @@ export class App2 extends Component {
         });
     }
     render() {
+        let dom = 1;
+        let dom2 = 2;
         return (
             <Fragment>
                 <div>
@@ -46,6 +48,8 @@ export class App2 extends Component {
                         <li>3</li>
                     </ul>
                 </Son>
+                <Son>{dom}</Son>
+                <Son>{dom2}</Son>
             </Fragment>
         );
     }

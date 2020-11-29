@@ -9,8 +9,8 @@ class Son extends Component {
     }
 
     static propTypes = {
-        age: PropTypes.string.isRequired,
-        text: PropTypes.string.isRequired,
+        // age: PropTypes.string.isRequired,
+        // text: PropTypes.string.isRequired,
     };
 
     static defaultProps = {
